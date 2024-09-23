@@ -1,0 +1,39 @@
+{
+    "name": "be-lenka/sap_sales-order-without-charge",
+    "description": "In every API call, you can make use of the following operations:   - You can read entire sales orders without charge or only parts of the data, using the provided filters.   - You can create sales orders without charge. Note that you must use “deep insert” requests (a header plus the following entities: header partner, item and item partner). You cannot create entities without including any related entities.   - For existing sales orders without charge, you can create new items. Note that you must use “deep insert” requests (with the entity: item partner). You cannot create entities without including any related entities.   - For existing sales orders without charge, you can update the header, header partner, item and item partner.   - For existing sales orders without charge, you can delete the header, header partner, item and item partner.",
+    "keywords": [
+        "openapitools",
+        "openapi-generator",
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "homepage": "https://openapi-generator.tech",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BeLenka Dev",
+            "homepage": "https://www.belenka.com"
+        }
+    ],
+    "require": {
+"php": ">=7.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+"guzzlehttp/guzzle": "^6.2 || ^7.0"
+ 
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": { "BeLenka\\SAP\\SalesOrderWOCharge\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "BeLenka\\SAP\\SalesOrderWOCharge\\Test\\" : "test/" }
+    }
+}
